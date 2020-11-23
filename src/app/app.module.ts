@@ -6,19 +6,23 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { CountriesComponent } from './components/countries/countries.component';
-import {HttpClient, HttpClientModule} from '@angular/common/http'
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { GoogleChartsModule } from 'angular-google-charts';
+import { DashboardCardComponent } from './components/dashboard-card/dashboard-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    CountriesComponent
+    CountriesComponent,
+    DashboardCardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    GoogleChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
